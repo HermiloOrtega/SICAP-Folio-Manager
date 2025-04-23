@@ -68,7 +68,10 @@ After contract verification, users can register new folios and use built-in sear
 Internal tool — changes are made and maintained internally. Feedback can be directed to the project lead.
 
 ## 🪪 License
-Internal use only. Not available for public distribution.
+⚠️ License Notice  
+This repository was originally published under the MIT License.  
+As of April 22, 2025, the license has been changed to **CC BY-NC-ND 4.0**.  
+See the LICENSE file for details.
 
 ## 🔗 Additional Resources
 - **Related Systems:** Connects with internal project management tools.
