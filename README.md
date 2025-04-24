@@ -3,6 +3,9 @@
 ## 🧭 Overview
 **SICAP Folio Manager** is a Windows application developed using C# and SQL Server. It is designed for project coordinators, project managers, and project administrators to generate and manage unique serial numbers (folios) for contracts. Access to the tool is secured via a login system with encrypted credentials and communications, ensuring that only authorized users can use the application.
 
+### Home screen
+![Screenshot](./assets/1.png) <!-- Replace with your image path -->
+
 ## 💡 Idea & Concept
 The primary objective of SICAP Folio Manager is to streamline the process of generating serial numbers for various contracts within the organization.
 
