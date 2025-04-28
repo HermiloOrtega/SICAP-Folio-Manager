@@ -1,81 +1,88 @@
-# 📦 SICAP Folio Manager
+# 📦 SICAP Foliador
 
 ## 🧭 Overview
-**SICAP Folio Manager** is a Windows application developed using C# and SQL Server. It is designed for project coordinators, project managers, and project administrators to generate and manage unique serial numbers (folios) for contracts. Access to the tool is secured via a login system with encrypted credentials and communications, ensuring that only authorized users can use the application.
+**SICAP Foliador** is a lightweight Windows application developed as a complement to the **[SICAP](https://github.com/HermiloOrtega/SICAP)**, designed specifically to manage the creation and tracking of administrative folios (IDs) associated with project contracts.
+
+The system ensures all new documentation linked to contracts has a unique, standardized folio number, improving traceability, auditing, and administrative workflows.
 
 ### Home screen
-![Screenshot](./assets/1.png) <!-- Replace with your image path -->
+![Screenshot](./assets/1.png)
+
+---
 
 ## 💡 Idea & Concept
-The primary objective of SICAP Folio Manager is to streamline the process of generating serial numbers for various contracts within the organization.
+- Simplify the generation of folio IDs for administrative contract documents.
+- Enable contract-related document tracking without overwhelming the main **[SICAP application](https://github.com/HermiloOrtega/SICAP)**.
+- Centralize folio history and project associations for auditing and operational transparency.
 
-It supports two types of contracts:
-- **Administrative Contracts:** Prompts for a contract number and auto-fills key contract information (description, user, financial plan, provider).
-- **Standard Contracts:** Allows generation of a serial number without auto-populated data.
-
-After contract verification, users can register new folios and use built-in search to retrieve records by serial number or contract details.
+---
 
 ## ✨ Features & Functionality
-- **Secure Login:** Encrypted login credentials and communication.
-- **Dual Serial Number Creation:**
-  - Admin contracts with auto-populated fields.
-  - Standard contracts with direct serial number generation.
-- **Registration:** Register new folios after confirmation.
-- **Search:** Locate records using serial number or contract information.
-- **Compact UI:** All core features accessible from a single screen.
+- **New Folio Registration**:
+  - Automatically generate the next available folio ID.
+  - Link folios to active projects and contracts.
+
+- **Folio Tracking**:
+  - Display recently generated folios and their associated contract/project metadata.
+
+- **Simple Search Functionality**:
+  - Quickly retrieve folios by project name, folio number, or **[SAP ERP](https://www.sap.com/canada/products/erp/what-is-sap-erp.html)** reference.
+
+- **Error Prevention**:
+  - Validation checks to avoid duplicate or skipped folio numbers.
+
+- **User Restrictions**:
+  - Only authorized administrative personnel permitted to create new folios.
+
+---
 
 ## ⚙️ Tech Stack
-- **Platform:** Windows Application
-- **Programming Language:** C#
-- **Database:** SQL Server
+- **Platform**: Windows Forms (Desktop Application)
+- **Language**: C# (.NET Framework)
+- **Database**: SQL Server (Shared with **[SICAP](https://github.com/HermiloOrtega/SICAP)** Database)
+- **IDE**: Visual Studio
+
+---
 
 ## 🏗 Architecture & Design
-- Built with C# and SQL Server for secure contract data handling.
-- Login and communication are fully encrypted.
-- One-screen design for streamlined usage.
-- Internal deployment, ensuring security and control.
+- Lightweight, single-form design focused on usability and speed.
+- Integration with **[SICAP](https://github.com/HermiloOrtega/SICAP)** Database's project and contract tables.
+- Clean modular code to allow easy maintenance and enhancements.
 
-## 🚀 Installation & Setup
-- **Prerequisites:** Windows OS, .NET Framework, SQL Server
-- **Deployment:** Installed internally on company network machines
-- **Access:** Login required, encrypted and restricted to authorized users
+---
 
-> **Note:** Setup and maintenance are handled by internal IT.
+## 🚀 Deployment & Hosting
+- Installed on designated administrative machines.
+- Connected securely to internal SQL Server environments.
 
-## 🧑‍💻 Usage
-1. Login securely.
-2. Generate folio:
-   - For admin contracts, enter contract number to auto-fill fields.
-   - For standard contracts, proceed with direct generation.
-3. Confirm and register the serial number.
-4. Use search to locate and manage previous entries.
+---
 
-## 🔍 My Role & Contributions
-- 💼 Full development using C# and SQL Server
-- 🧱 Designed secure login and encryption
-- 🐞 Built dual-path serial generation workflows
-- 🤝 Created a unified, user-friendly interface
+## 🧑‍💻 My Role & Contributions
+- Full design and development of the application.
+- UI/UX creation focused on minimalism and efficiency.
+- Integration with **[SICAP](https://github.com/HermiloOrtega/SICAP)** database's architecture.
+- SQL query optimization for fast retrieval and secure folio creation.
+
+---
 
 ## 🧗 Challenges & Learnings
-- Implemented robust encryption for access control.
-- Developed auto-populating logic for admin contracts.
-- Designed an intuitive, all-in-one interface.
-- Strengthened skills in contract management workflows and secure application development.
+- Designing a micro-application with reliability and very low error tolerance.
+- Ensuring multi-user consistency without introducing concurrency errors.
+- Embedding the solution into larger **[SICAP](https://github.com/HermiloOrtega/SICAP)** workflows without disruption.
+
+---
 
 ## 📈 Future Enhancements
-- Support more contract types.
-- Add search filters and export/reporting features.
-- Integrate with internal project systems for end-to-end contract lifecycle management.
+- Add export to Excel for folio history reporting.
+- Integrate approval workflows for folio assignment.
+- Implement user activity logging for auditing purposes.
 
-## 🤝 Contributing
-Internal tool — changes are made and maintained internally. Feedback can be directed to the project lead.
+---
+
+## 🤝 Project Type
+Internal Operational Enhancement — Part of the **AHMSA** Systems Ecosystem.
+
+---
 
 ## 🪪 License
-⚠️ License Notice  
-This repository was originally published under the MIT License.  
-As of April 22, 2025, the license has been changed to **CC BY-NC-ND 4.0**.  
-See the LICENSE file for details.
-
-## 🔗 Additional Resources
-- **Related Systems:** Connects with internal project management tools.
-- **Microsoft Relevance:** Strong alignment with Microsoft technologies (C#, SQL Server, secure WinForms development).
+⚠️ Internal Confidential Project — Copyright reserved to **AHMSA**.
